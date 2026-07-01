@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "description": "Skills backup synced by Skills Manager",
+    "version": "2026.07.01"
+  },
+  "name": "codex",
+  "owner": {
+    "name": "black605"
+  },
+  "plugins": [
+    {
+      "description": "当用户想用 AI 学习一项新技能，或者请求学习路线图、7天计划、概念讲解、练习设计、错误分析、阶段测试、作品批改、30天升级计划时，使用这个技能。也适用于用户希望 AI 扮演教练、导师、陪练或复盘助手的场景，尤其适合从零基础到初级进阶的技能学习支持。",
+      "name": "ai-learning-coach-zh",
+      "skills": [
+        "./"
+      ],
+      "source": "./ai-learning-coach-zh",
+      "strict": false
+    }
+  ]
+}
