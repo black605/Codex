@@ -1,0 +1,110 @@
+【Landing Page Hero 模板 · gpt-image-2】
+
+推荐参数：
+  -Size "1536x1024" 或 "2560x1440"
+  -Quality high
+  横版 16:9 或 16:10
+
+=======================================================================
+
+Create a realistic full-width desktop landing page hero section screenshot 
+for a product called "{{PRODUCT_NAME}}" ({{PRODUCT_CATEGORY: developer tool 
+/ SaaS for marketing / AI writing app / design software / fintech app}}).
+
+Viewport: 1440px wide desktop browser. Show only the above-the-fold hero 
+area (no scroll). Optional: include Chrome-like browser chrome at top.
+
+Top navigation (sticky, 72px tall, clean):
+- Left: "{{PRODUCT_NAME}}" wordmark in heavy sans serif + small logo mark
+- Center: nav items (16px medium, 32px gap): 
+  "Product", "Pricing", "Docs", "Customers", "Blog"
+- Right: "Log in" text link + primary pill button "Get Started" 
+  (rounded, {{PRIMARY_COLOR}} background, white text, 14px)
+
+Hero section (center-aligned, generous vertical spacing ~120px from top):
+
+1. Small eyebrow text above headline (OPTIONAL):
+   "{{EYEBROW: NEW · Now with AI — Try free}}" 
+   Style: 13px uppercase, letter-spacing 1px, medium gray #6B7280,
+   optional pill background #F3F4F6.
+
+2. Main headline (EXACT TEXT, 2 lines max):
+   "{{HEADLINE_LINE_1: Ship your next project}}
+   {{HEADLINE_LINE_2: in half the time.}}"
+   Typography: 72-80px bold serif (Iowan Old Style / Playfair) 
+   OR 72px bold sans serif (Inter / GT America). 
+   Line-height 1.1, tight kerning.
+   Color: near-black #0A0A0A, center-aligned.
+
+3. Subheadline (EXACT TEXT, 1-2 lines):
+   "{{SUBHEADLINE: A minimal Git workflow for teams who value focus. 
+    Built for developers who care about their craft.}}"
+   Typography: 20-22px regular, medium gray #4B5563, 
+   center-aligned, max-width 620px.
+
+4. CTA row (32px below subheadline, 16px gap between buttons):
+   Primary button (larger, leftmost):
+     Text: "{{PRIMARY_CTA: Start free trial}}"
+     Style: Black background #0A0A0A, white text, 16px semibold, 
+     rounded 8px, 52px tall, padding 0 28px.
+   
+   Secondary button:
+     Text: "{{SECONDARY_CTA: Watch demo → }}" (with arrow)
+     Style: Transparent background, text-only with hover underline, 
+     16px medium, same gray as subhead.
+
+5. Small social proof line below CTAs (OPTIONAL):
+   "{{SOCIAL_PROOF: ★★★★★ Trusted by 12,000+ developers}}" 
+   or "Free for teams up to 5 · No credit card required"
+   Style: 14px medium, gray, center-aligned.
+
+6. Hero visual area (below CTAs, ~500px tall):
+   {{HERO_VISUAL: 
+     OPTION A: A tilted/perspective screenshot of the product itself 
+       (dashboard / code editor / mobile app) with soft shadow, 
+       3d perspective (5-10° tilt), floats on clean background
+     OPTION B: An abstract 3D render of geometric shapes in the brand colors 
+       (gradient blobs / isometric cubes / flowing ribbons)
+     OPTION C: A flat hero illustration with characters or icons, minimal line art
+   }}
+
+Background: Pure white #FFFFFF. 
+Optional: Very subtle decorative elements 
+ (1px dots at 32px grid in 5% opacity / 
+  soft blurred gradient blobs in corners / 
+  thin accent line at top of page).
+
+Trust bar (below hero visual, bottom of viewport):
+Small gray text "[Trusted by X teams]" (13px medium, #9CA3AF, centered) — 
+use placeholder text, NOT fabricated specifics like "Trusted by 10,000+ teams".
+Row of 5-6 MONOCHROME ABSTRACT GEOMETRIC MARKS as logo placeholders 
+(simple circle / triangle / hexagon / cross / square shapes, all in 
+the same muted gray #9CA3AF), 48px high, 80px gap between, center-aligned. 
+⚠️ DO NOT generate fabricated company logos or invented brand names. 
+⚠️ DO NOT attempt to reference real companies (no GitHub / Vercel / 
+Stripe-style marks). These are pure abstract placeholders signaling 
+"real client logos go here."
+
+Typography hierarchy:
+- Display: 72-80px bold, near-black
+- H2 (subhead): 20-22px regular, medium gray
+- Body: 16-18px regular
+- Small: 13-14px medium
+Font family: {{FONT: Inter / GT America / Söhne / Instrument Sans}}
+
+Color palette:
+- Primary: {{PRIMARY_COLOR: #3B82F6 blue / #10B981 green / #8B5CF6 purple / #000 black}}
+- Background: #FFFFFF
+- Text: #0A0A0A (headline) / #4B5563 (body) / #9CA3AF (muted)
+- Accent: {{ACCENT_COLOR}}
+
+Use case: Product landing page hero screenshot for marketing site.
+
+Constraints:
+- No watermark. No real company logos (no Vercel, Linear, Stripe, GitHub, etc.).
+- All text must be crisp and 100% readable.
+- Consistent 8px grid alignment.
+- Hero copy must not have duplicate lines or extra filler text.
+- Headline must be EXACTLY the text above, no paraphrasing.
+- Button labels must match EXACTLY.
+- Looks like a shipped production landing page, not a design concept.

@@ -1,0 +1,3 @@
+interface:
+  short_description: "将长文转为带视觉建议和讲师逐字稿的结构化PPT大纲"
+  display_name: "文章转PPT大纲"

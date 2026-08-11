@@ -1,0 +1,3 @@
+interface:
+  short_description: "为HyperFrames编写可定位、可预览且可稳定渲染的CSS动画"
+  display_name: "CSS 动画"

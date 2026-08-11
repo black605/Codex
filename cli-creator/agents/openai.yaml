@@ -1,0 +1,4 @@
+interface:
+  display_name: "命令行工具创建"
+  short_description: "根据API、SDK或操作流程创建可复用、稳定的命令行工具"
+  default_prompt: "Create a composable CLI from this source material, install it on PATH, test it from outside the source folder, and create a companion skill that teaches Codex when to use it."

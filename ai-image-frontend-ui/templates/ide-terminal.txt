@@ -1,0 +1,220 @@
+【IDE / 终端 / 代码编辑器截图模板 · gpt-image-2】
+
+推荐参数：
+  -Size "1536x1024" 或 "2560x1440"
+  -Quality high
+
+=======================================================================
+
+## 变体 A: 现代 IDE 截图（VSCode / Cursor 风格）
+
+Create a realistic screenshot of a modern code editor IDE (VSCode-like 
+but not VSCode specifically).
+
+Scene: macOS window, dark theme, full code editor interface.
+
+Window chrome: macOS-style title bar with 3 traffic lights (red/yellow/green) 
+on left, window title "{{PROJECT_NAME}} — {{FILE_NAME: app.tsx}}" centered.
+
+Layout (3-pane):
+- Far left: Activity bar (50px wide, dark) with vertical icons: 
+  📁 Files (selected), 🔍 Search, 🌿 Git, 🧩 Extensions, ⚙ Settings
+- Left pane: File explorer (240px wide)
+- Center: Main code editor (flex, large)
+- Right (OPTIONAL): Outline or AI assistant panel (280px wide)
+
+File explorer content:
+```
+▼ {{PROJECT_NAME}}
+  ▼ src/
+    ▼ components/
+      📄 Button.tsx
+      📄 Card.tsx
+      📄 Input.tsx
+    ▼ pages/
+      📄 Home.tsx (highlighted, currently open)
+      📄 About.tsx
+    📄 App.tsx
+    📄 main.tsx
+  📄 package.json
+  📄 tsconfig.json
+  📄 README.md
+```
+
+Main editor content (the file "Home.tsx"):
+- Top tab bar: 3 open tabs [Home.tsx ×] [Button.tsx] [utils.ts]
+  First tab is active (highlighted with bottom border).
+- Line numbers on left (1-40 visible).
+- Code content (syntax highlighted, React/TypeScript):
+```
+import { useState } from 'react'
+import { Button } from './components/Button'
+import type { User } from './types'
+
+interface HomeProps {
+  user: User
+  onAction: () => void
+}
+
+export function Home({ user, onAction }: HomeProps) {
+  const [count, setCount] = useState(0)
+  
+  return (
+    <div className="container mx-auto p-8">
+      <h1 className="text-4xl font-bold">
+        Welcome, {user.name}
+      </h1>
+      <Button onClick={() => setCount(c => c + 1)}>
+        Clicked {count} times
+      </Button>
+    </div>
+  )
+}
+```
+
+Syntax highlighting (dark theme colors):
+- Keywords (import, export, function, const, return, interface): #C792EA (purple)
+- Strings: #C3E88D (green)
+- Types/Components: #82AAFF (blue)
+- Variables: #EEFFFF (near-white)
+- Comments: #546E7A (slate gray)
+- Numbers: #F78C6C (orange)
+- Background: #0D1117 or #1E1E2E
+
+Bottom status bar (24px tall, dark):
+- Left: branch name "main" with git icon, "✓ 0 errors"
+- Right: "TypeScript JSX" "UTF-8" "LF" "Ln 15, Col 24" "Spaces: 2"
+
+Font: JetBrains Mono / Fira Code / SF Mono, 14px, with ligatures.
+
+Use case: Realistic IDE screenshot for developer marketing / tutorial.
+
+Constraints:
+- Code must be syntactically valid TypeScript React.
+- Syntax highlighting must be consistent across all tokens.
+- No watermark. No real editor branding (no "Visual Studio Code" text 
+  visible, no VSCode logo).
+- All code text must be 100% readable.
+- Monospace font, consistent character width.
+
+=======================================================================
+
+## 变体 B: 终端截图（现代暗色主题）
+
+Create a realistic screenshot of a modern terminal application.
+
+Scene: macOS terminal window on clean desktop.
+
+Window chrome: macOS title bar with 3 traffic lights, title "{{USER}}@{{HOST}}: 
+~/{{PROJECT_DIR}} — {{SHELL: zsh}}".
+
+Terminal content (dark background #0D1117 or #1E1E2E):
+```
+{{USER}}@{{HOST}} ~/{{PROJECT_DIR}} (main)
+$ pnpm dev
+
+> {{PROJECT_NAME}}@0.1.0 dev
+> vite --port 3000
+
+  VITE v5.2.8  ready in 486 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.1.12:3000/
+  ➜  press h + enter to show help
+
+  [2:43:11 PM]  ✓ 34 modules transformed
+  [2:43:11 PM]  dist/index.html                 0.48 kB
+  [2:43:11 PM]  dist/assets/index-C3n4d3.css    14.23 kB
+  [2:43:11 PM]  dist/assets/index-B7kLm9.js    142.57 kB
+  [2:43:11 PM]  ✓ built in 1.24s
+
+{{USER}}@{{HOST}} ~/{{PROJECT_DIR}} (main)
+$ _
+```
+
+Terminal color scheme:
+- Prompt user/host: cyan #89DDFF
+- Path: yellow #FFCB6B
+- Git branch: orange/green #F78C6C
+- Success checkmarks: green #C3E88D
+- URLs / highlights: blue #82AAFF
+- Body text: near-white #EEFFFF
+- Dim text: gray #546E7A
+- Background: #1E1E2E
+
+Typography: JetBrains Mono / Fira Code / Hack, 15px, ligatures enabled.
+Terminal cursor visible as solid block █ at end (optional, for "typing" feel).
+
+Use case: Developer tool marketing screenshot / dev tutorial.
+
+Constraints:
+- Terminal commands must be realistic and syntactically valid.
+- All output must look like actual program output (not fake/AI-generated).
+- No watermark. No real branding of specific terminal apps.
+- Perfect monospace alignment.
+
+=======================================================================
+
+## 变体 C: 代码片段图（Carbon-style）
+
+Create a single standalone code snippet image, styled like Carbon.sh.
+
+Scene: Code snippet floating on a soft gradient background (purple-to-pink 
+OR dark blue).
+
+Subject: A rounded rounded-corner code block with macOS-style traffic 
+lights at top-left.
+
+Code (TypeScript React, syntax highlighted):
+```
+{{CODE_SNIPPET: 
+  import { useState } from 'react'
+  
+  export function Counter() {
+    const [count, setCount] = useState(0)
+    
+    return (
+      <button 
+        onClick={() => setCount(c => c + 1)}
+        className="px-4 py-2 bg-blue-500 text-white rounded"
+      >
+        Count: {count}
+      </button>
+    )
+  }
+}}
+```
+
+Code block style:
+- Background: Dark #1E1E2E with subtle gradient or #282C34
+- Border radius: 16px
+- Padding: 32px
+- Drop shadow: 0 20px 50px rgba(0,0,0,0.3)
+- Width: ~760px, height auto based on content
+- macOS traffic lights top-left (3 colored dots)
+- Optional filename label at top: "Counter.tsx"
+
+Syntax highlighting (use "One Dark Pro" / "Dracula" / "GitHub Dark" palette):
+- Keywords: purple/pink
+- Functions: blue
+- Strings: green
+- Numbers: orange
+- Comments: muted gray
+
+Background gradient (wraps around code block):
+{{GRADIENT_COLOR: 
+  - Purple to pink (like Carbon default)
+  - Dark blue to teal
+  - Orange to red sunset
+  - Black to deep purple
+}}
+
+Position: Code block centered in frame, 20% padding around it.
+
+Use case: Social media post / blog hero image / documentation.
+
+Constraints:
+- Code must be syntactically correct.
+- No watermark. No real branding.
+- Text must be crisp and readable.
+- Soft drop shadow under code block, subtle depth.

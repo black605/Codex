@@ -1,0 +1,95 @@
+【SaaS Dashboard 模板 · gpt-image-2】
+
+推荐参数：
+  -Size "1536x1024" 或 "2560x1440"
+  -Quality high
+  横版 16:10 或 16:9 最佳
+
+使用：复制下方，替换 {{占位符}}，保存成 .txt 后跑脚本。
+
+=======================================================================
+
+Scene: Desktop browser view (1440px wide) of a modern SaaS analytics dashboard. 
+Clean Chrome-like browser chrome at top with 3 tabs and URL bar reading 
+"app.{{PRODUCT_NAME_LOWER}}.com/dashboard". Behind the browser: soft 
+gradient background (optional, can be pure white).
+
+Subject: The analytics dashboard of a product called "{{PRODUCT_NAME}}" 
+(a {{PRODUCT_CATEGORY: SaaS for customer support / developer tool / 
+e-commerce analytics / project management / finance ops}}).
+
+Important details:
+
+Top navigation bar (60px tall, white background with bottom border #E5E7EB):
+- Left: "{{PRODUCT_NAME}}" wordmark in bold sans serif with small logo mark
+- Center-left: primary nav items: "Overview", "{{TAB_2}}", "{{TAB_3}}", "{{TAB_4}}"
+- Right: search icon, notification bell with small red dot, user avatar circle
+
+Left sidebar (260px wide, #F9FAFB background):
+- Menu items with small line icons (24px):
+  [⊙] Dashboard (SELECTED — highlighted with light blue #EFF6FF background)
+  [📊] {{MENU_2}}
+  [👥] {{MENU_3}}
+  [💰] {{MENU_4}}
+  [⚙] Settings
+- Bottom of sidebar: small "Upgrade to Pro" banner card
+
+Main content area (padding 32px):
+
+1. Page header:
+   - H1 "Overview" (28px, semibold, #111827)
+   - Subtitle "{{DATE_RANGE: e.g. Last 30 days}}" (14px, #6B7280)
+   - Right side: date picker button + "Export" outline button
+
+2. KPI cards row (4 equal-width cards, 16px gap):
+   Each card has: small label on top (12px uppercase #6B7280), 
+                  big number in middle (32px bold #111827), 
+                  delta indicator at bottom (green arrow + "+12.4%" 
+                  or red arrow + "-3.2%").
+   Card 1: "{{KPI_1_LABEL: MRR}}" / "{{KPI_1_VALUE: $48,291}}" / +12.4%
+   Card 2: "{{KPI_2_LABEL: Active Users}}" / "{{KPI_2_VALUE: 12,483}}" / +5.1%
+   Card 3: "{{KPI_3_LABEL: Churn Rate}}" / "{{KPI_3_VALUE: 2.3%}}" / -0.8%
+   Card 4: "{{KPI_4_LABEL: NPS}}" / "{{KPI_4_VALUE: 72}}" / +4
+
+3. Main chart (large, full width):
+   Card with shadow, inside: 
+   - Chart title "{{CHART_TITLE: Daily Active Users}}" (18px semibold)
+   - Small legend (2-3 series)
+   - Line chart area (~320px tall) with smooth curves, 
+     primary line in {{PRIMARY_COLOR: #3B82F6}}, 
+     secondary line in light gray #E5E7EB, 
+     X-axis dates (last 30 days), Y-axis values
+
+4. Bottom row (2 columns, 50/50 split):
+   Left: Table "{{TABLE_TITLE: Top Performers}}" with 5 rows, columns: 
+         Avatar + Name / Metric / Change
+   Right: Donut chart "{{DONUT_TITLE: Traffic Sources}}" with 4 segments 
+          (Direct 42%, Organic 28%, Referral 18%, Social 12%), 
+          legend to the right
+
+Typography: Inter or SF Pro Display. 
+- Display: 28-32px semibold #111827
+- Body: 14-16px regular #374151
+- Small/muted: 12px #6B7280
+
+Colors: 
+- Primary: {{PRIMARY_COLOR: #3B82F6 blue}}
+- Background: #FFFFFF
+- Subtle bg: #F9FAFB  
+- Border: #E5E7EB
+- Success: #10B981
+- Danger: #EF4444
+
+Spacing: Strict 8px grid system. 24px padding inside cards. 16px gap 
+between cards. 32px between major sections.
+
+Use case: Realistic product screenshot for a marketing website, as if 
+taken from the actual shipped product.
+
+Constraints:
+- No watermark. No real company logos (no Notion, Linear, Stripe, Vercel, 
+  or any recognizable SaaS brand).
+- All numbers must look plausible, not "Lorem Ipsum" placeholders.
+- All text must be crisp and 100% readable at 2x retina.
+- Do not add imaginary UI elements not described above.
+- Strict pixel-perfect alignment.

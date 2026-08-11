@@ -1,0 +1,3 @@
+interface:
+  short_description: "将GitHub热门项目整理成清晰、有趣的手绘风格信息图"
+  display_name: "GitHub 热榜手绘图"

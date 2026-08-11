@@ -1,0 +1,4 @@
+interface:
+  display_name: "学术论文规划"
+  short_description: "基于真实代码与学校要求规划论文结构、证据映射和改写方案"
+  default_prompt: "请使用 $academic-paper-strategist 基于当前项目、学校模板与检测报告生成证据映射、keep/rewrite/delete 矩阵和定稿规划。"

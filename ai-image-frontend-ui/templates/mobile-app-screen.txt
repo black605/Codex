@@ -1,0 +1,142 @@
+【移动 App 屏幕模板 · gpt-image-2】
+
+推荐参数：
+  -Size "1024x1536" （竖版 2:3）
+  -Quality high
+
+=======================================================================
+
+## 变体 A: Onboarding Welcome 屏
+
+Create a vertical mobile app onboarding screen for an app called 
+"{{APP_NAME}}". iPhone 15 Pro frame, portrait orientation.
+
+Status bar at top: 9:41 AM, full battery, 5G signal.
+
+Hero illustration area (top 40% of screen): 
+{{ILLUSTRATION: simple line illustration of three plates and two wine glasses 
+  / abstract geometric shapes in soft colors / a cute character waving}}.
+
+Headline (EXACT TEXT): "{{HEADLINE: WELCOME TO FORGE}}"
+Typography: 32px bold sans serif, center-aligned, high contrast.
+
+Supporting line (EXACT TEXT): "{{TAGLINE: A quieter way to gather people 
+around a table.}}"
+Typography: 17px regular, medium gray #6B7280, center-aligned, 2 lines max.
+
+Primary CTA button (bottom area, 56px tall, full width with 24px margin):
+Text: "Get started" (or "{{PRIMARY_CTA}}")
+Background: {{PRIMARY_COLOR: coral #FF6B6B / deep navy #1E2A44 / black #000}}
+Text color: white
+Rounded corners: 16px
+
+Secondary link below primary button:
+Text: "I already have an account" (or "{{SECONDARY_CTA}}")
+Style: text-only link, medium gray, 15px regular, centered
+
+Page indicator dots at bottom (3 dots, first one filled):
+• ○ ○
+
+Background: {{BG: Warm cream #FAF6EE / pure white / soft gradient}}.
+
+Use case: Realistic mobile app onboarding screenshot.
+
+Constraints:
+- No watermark. No real app branding.
+- Readable copy. No duplicate text.
+- iPhone frame with realistic bezels and Dynamic Island notch.
+- Generous spacing following 8px grid.
+
+=======================================================================
+
+## 变体 B: Todo / Task 列表屏
+
+Create a clean mobile app screenshot for a minimalist to-do app called 
+"{{APP_NAME: DAYBREAK}}". iPhone portrait frame.
+
+Status bar: 9:41 AM.
+
+Header (large, top-aligned):
+- Big title "{{APP_NAME}}" in 34px bold.
+- Subtitle underneath: "{{SUBTITLE: Tuesday, 23 April}}" in 17px regular, 
+  medium gray.
+
+Below header: "{{SECTION_TITLE: Today}}" small caps label (13px uppercase 
+#6B7280, letter-spacing 0.5px).
+
+Task list (card-style rows, 16px vertical gap):
+[✓] {{TASK_1: Review quarterly notes}}
+[ ] {{TASK_2: Call mom}}
+[ ] {{TASK_3: Ship the image update}}
+[ ] {{TASK_4: Pick up bread}}
+[ ] {{TASK_5: Team standup at 3pm}}
+
+Each task row:
+- 48px tall card with soft shadow and rounded corners (12px)
+- Checkbox on left (24px circle, filled for checked tasks with accent color)
+- Task text in 17px regular (strikethrough with gray color for completed)
+- Small metadata on right (time or priority badge, optional)
+
+Floating action button at bottom-right: 
+Round 56px "+" button in {{ACCENT_COLOR: deep navy #1E2A44}}, 
+white plus icon, soft drop shadow.
+
+Bottom tab bar (if any, else skip):
+4 tabs: [📋] Today, [📅] Calendar, [🔖] Tags, [⚙] Settings.
+Selected: "Today" highlighted.
+
+Typography: Rounded sans serif (Nunito / SF Rounded feel). 
+Background: Muted cream #FAF6EE or pure white.
+Primary accent: Deep navy #1E2A44 / or "{{ACCENT_COLOR}}".
+
+Use case: Portfolio-worthy mobile UI screenshot.
+
+Constraints:
+- No watermark. No real app branding (no Apple logo visible).
+- Perfect typography, no text artifacts or duplicate characters.
+- Pixel-perfect alignment.
+- Realistic shadow depth (subtle, not heavy).
+
+=======================================================================
+
+## 变体 C: E-commerce Product Detail 屏
+
+Create a vertical mobile screenshot of an e-commerce product detail page 
+for an online boutique called "{{SHOP_NAME}}". iPhone portrait frame.
+
+Status bar: 9:41 AM.
+
+Top nav (sticky): 
+- Back arrow on left (24px)
+- Product category breadcrumb "{{CATEGORY: Women / Dresses}}" (15px medium)
+- Heart icon + share icon on right
+
+Hero image area (square, full width, ~400px tall):
+{{PRODUCT_IMAGE: A single flat-lay photograph of a linen dress on a 
+neutral background / a bottle of skincare on marble surface}}.
+3 small image thumbnails below with the first one selected.
+
+Product info block (padding 24px):
+- Small brand name "{{BRAND_NAME}}" (13px uppercase, gray, letter-spacing)
+- Product title "{{PRODUCT_TITLE: Relaxed Linen Midi Dress}}" 
+  (24px semibold, 2 lines max)
+- Price row: "{{PRICE: $148}}" (22px bold) + optional strikethrough 
+  "$198" and small "-25% off" pill badge in green
+- Small ★★★★☆ rating with "(127 reviews)" gray text
+- Color picker row: 4 circle swatches (16px), selected one with ring outline
+- Size picker row: 5 pill buttons "XS S M L XL", one selected with 
+  filled black background
+
+Primary CTA (sticky bottom, full width, 56px tall):
+"Add to bag" (black background, white text, rounded 8px, bold 16px)
+
+Typography: Clean sans serif (Inter / SF Pro). Elegant, not crowded.
+Background: Pure white.
+
+Use case: Realistic e-commerce app screenshot.
+
+Constraints:
+- No watermark. No real retail brands (no Zara, H&M, Everlane, etc.).
+- Product image should look plausible (real product photography style).
+- Perfect text legibility.
+- All interactive elements visually distinct.

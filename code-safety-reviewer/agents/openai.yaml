@@ -1,0 +1,4 @@
+interface:
+  display_name: "代码安全审查"
+  short_description: "检查代码变更中的漏洞、危险操作、数据丢失和上线风险"
+  default_prompt: "Review my code changes for safety, security, and regression risks before I commit."

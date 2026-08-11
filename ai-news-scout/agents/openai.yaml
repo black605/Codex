@@ -1,0 +1,3 @@
+interface:
+  short_description: "搜索、筛选并整理高价值AI动态，生成精简日报或周报"
+  display_name: "AI 新闻侦察"

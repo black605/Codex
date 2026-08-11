@@ -1,0 +1,3 @@
+interface:
+  short_description: "为HyperFrames编写可控、可定位且可稳定渲染的Anime.js动画"
+  display_name: "Anime.js 动画"

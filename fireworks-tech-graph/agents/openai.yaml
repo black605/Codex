@@ -1,0 +1,4 @@
+interface:
+  display_name: "技术图表设计"
+  short_description: "将系统、架构或工作流描述转换为专业SVG和PNG图表"
+  default_prompt: "Turn the user's system or workflow description into a polished SVG diagram and export a PNG."

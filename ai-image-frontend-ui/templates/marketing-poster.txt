@@ -1,0 +1,143 @@
+【营销海报（含精确文字）模板 · gpt-image-2】
+
+推荐参数：
+  -Size "1024x1536" （竖版海报 2:3）
+  或 "1024x1024"（社交媒体方图）
+  -Quality high
+
+=======================================================================
+
+## 变体 A: 产品发布海报（精确文字 + 产品居中）
+
+Create a vertical poster design (ratio 2:3) for a product launch campaign.
+
+Scene: Studio-lit flat lay / product-centric composition, premium feel.
+
+Subject: A marketing poster announcing "{{PRODUCT_NAME}}" 
+({{PRODUCT_TYPE: new app / new hardware / event / service}}).
+
+Important details:
+
+Top third:
+- Small eyebrow text (EXACT TEXT): "{{EYEBROW: COMING SOON · 01.15.26}}"
+  Style: 14px uppercase, letter-spacing 2px, medium gray, centered
+
+- Main headline (EXACT TEXT, 2-3 lines max):
+  "{{HEADLINE_LINE_1: A new way}}
+  {{HEADLINE_LINE_2: to think about}}
+  {{HEADLINE_LINE_3: your mornings.}}"
+  Typography: 80-96px heavy condensed sans serif OR elegant serif.
+  Color: near-black #0A0A0A, center-aligned.
+  Line-height: tight 0.95.
+
+Middle third (hero visual):
+{{HERO_IMAGE: 
+  OPTION A: One hero product photo (bottle/device/object) floating with 
+    soft drop shadow, centered, against clean background
+  OPTION B: An editorial photograph of someone using the product
+  OPTION C: Abstract 3D render related to the product concept
+}}
+
+Bottom third:
+- Supporting copy (EXACT TEXT): "{{SUB_COPY: Designed for the people 
+  who care about the first thirty minutes. Built for the ones who never 
+  settle.}}"
+  Style: 18-20px regular, medium gray, center-aligned, max 3 lines.
+
+- Brand mark at very bottom (EXACT TEXT): "{{BRAND_NAME}}"
+  Style: 32px bold wordmark OR small logo icon + wordmark.
+
+Background: {{BG: 
+  - Cream #FAF6EE with subtle grain texture  
+  - Pure off-white #FAFAFA
+  - Deep forest green #1F2E27
+  - Warm terracotta #D97757
+  - Muted clay #A8937E
+}}
+
+Typography:
+- Headline: {{DISPLAY_FONT: Tiempos Headline / Canela / GT Sectra 
+  (elegant serif) OR GT America Condensed / Söhne Breit 
+  (heavy condensed sans)}}
+- Body: {{BODY_FONT: Söhne / Inter / GT America}}
+
+Color palette (3 colors max for editorial feel):
+- Primary: {{PRIMARY: near-black or deep navy}}
+- Accent: {{ACCENT: one warm color like terracotta/mustard/coral}}
+- Background: {{BG_COLOR}}
+
+Use case: Editorial marketing poster, print-quality feel.
+
+Constraints:
+- Render all text VERBATIM as specified above. 
+- No extra words. No duplicate text.
+- No watermark. No logos other than the specified brand mark.
+- Typography must be pixel-perfect with clean kerning.
+- Generous negative space — do not fill the composition edge to edge.
+- No lorem ipsum anywhere.
+
+=======================================================================
+
+## 变体 B: 社交媒体方图（Instagram/小红书）
+
+Create a 1:1 square social media post for a campaign about "{{TOPIC}}".
+
+Scene: Bold graphic composition, attention-grabbing but editorial.
+
+Subject: A social post for {{BRAND_NAME}}.
+
+Layout: Split into diagonal/horizontal thirds OR centered with strong 
+focal point.
+
+Exact text elements:
+- Big bold statement (EXACT TEXT, short, 2-6 words max):
+  "{{BIG_STATEMENT: WORK LESS. MATTER MORE.}}"
+  Style: All caps or Title Case, 96-120px heavy sans serif, 
+  color high-contrast with background.
+
+- Supporting line (EXACT TEXT, 1 line):
+  "{{TAGLINE: A new philosophy of productivity.}}"
+  Style: 22-28px regular, medium weight contrast.
+
+- Brand attribution bottom-right (EXACT TEXT):
+  "{{BRAND_NAME}}" (14-18px, medium)
+
+- Optional call-out (swipe / tap):
+  "{{CTA: Swipe →}}" or "{{CTA: Read more at lumen.io}}"
+
+Visual style:
+{{STYLE:
+  OPTION A: Bold typographic — text dominates, 80% of composition, 
+    minimal imagery, 2-3 colors only
+  OPTION B: Photo-first — editorial photograph covers 60%, text overlays 
+    with high-contrast background band
+  OPTION C: Abstract — gradient or geometric shapes in brand colors, 
+    text centered
+}}
+
+Colors: Pick ONE dominant color + black + one accent.
+Example palettes:
+- Cream #FAF6EE + near-black #0A0A0A + coral #FF6B6B
+- Deep forest #1F2E27 + cream + mustard #E5A048
+- Warm terracotta #D97757 + cream + deep navy
+
+Use case: Social media marketing post, scroll-stopping.
+
+Constraints:
+- All text must be EXACT. No AI gibberish words.
+- Strong hierarchy, one thing reads first.
+- No watermark. No extra brand logos.
+- Typography must be sharp at 1080x1080 display resolution.
+
+=======================================================================
+
+## 💡 Tips for text-heavy posters
+
+1. **Put literal text in quotes in the prompt** — `Headline reads: "Ship faster."`
+2. **Use ALL CAPS for tricky words** — brands, acronyms, uncommon words
+3. **Spell out brand/product names letter-by-letter** if they keep 
+   getting mangled: `The product name is "F-O-R-G-E" (FORGE)`
+4. **Always add constraints**:
+   - `"Render text verbatim. No extra words. No duplicate text."`
+5. **Iterate**: if first output has wrong font weight, edit with 
+   `"make the headline heavier/thinner, keep everything else"`

@@ -1,0 +1,150 @@
+【设计系统 / 组件展示图模板 · gpt-image-2】
+
+推荐参数：
+  -Size "1536x1024" 或 "2560x1440"
+  -Quality high
+  横版最佳
+
+=======================================================================
+
+## 变体 A: 组件库一览图
+
+Create a realistic screenshot of a design system / component library 
+documentation page for a design system called "{{DESIGN_SYSTEM_NAME}}".
+
+Scene: Desktop browser view (1440px wide) of a documentation site.
+
+Subject: A component library showcase page showing multiple UI components 
+in a grid layout.
+
+Layout:
+- Left sidebar (260px): Navigation with categories and components
+- Main content area: Component showcase grid
+
+Left sidebar:
+- Top: Design system logo + name "{{DESIGN_SYSTEM_NAME}}" (18px bold)
+- Search bar "⌕ Search components..."
+- Categories (collapsible):
+  ▼ Foundations
+    - Colors
+    - Typography  
+    - Spacing
+    - Icons
+  ▼ Components
+    - Buttons (SELECTED — highlighted)
+    - Inputs
+    - Cards
+    - Modals
+    - Navigation
+    - Tables
+  ▶ Patterns
+  ▶ Templates
+
+Main content (padding 48px):
+
+1. Page header:
+   - Breadcrumb: "Components / Buttons"
+   - H1 "Buttons" (36px bold)
+   - Subtitle: "Interactive triggers for actions. Available in 3 sizes 
+     and 4 variants." (16px regular, gray)
+
+2. Component variants showcase (3-column grid, 24px gap):
+
+   Section "Variants" — show 4 button variants in a row:
+   [Primary] [Secondary] [Ghost] [Destructive]
+   Each: 44px tall pill buttons with respective styles.
+
+   Section "Sizes" — show 3 sizes stacked or in row:
+   [Small] [Medium] [Large]
+
+   Section "States" — show 5 states:
+   [Default] [Hover] [Pressed] [Focus] [Disabled]
+
+   Section "With icons" — show 3 variants:
+   [← Back] [Download ↓] [Continue →]
+
+3. Code snippet card below each variant row:
+   Dark background #0D1117, syntax highlighted code:
+   ```
+   <Button variant="primary" size="md">
+     Click me
+   </Button>
+   ```
+
+Typography: 
+- Display: 36-48px bold
+- Section headers: 20px semibold
+- Body: 15px regular, line-height 1.6
+- Code: JetBrains Mono or SF Mono 13px
+
+Colors (the design system itself):
+- Primary: {{PRIMARY: #3B82F6 blue / #10B981 green / #8B5CF6 purple}}
+- Gray scale: #F9FAFB #F3F4F6 #E5E7EB #D1D5DB #9CA3AF #6B7280 #4B5563 #374151 #1F2937 #111827
+- Success: #10B981
+- Warning: #F59E0B
+- Danger: #EF4444
+- Info: #3B82F6
+
+Background: Pure white #FFFFFF for page, subtle gray #F9FAFB for 
+component preview cards.
+
+Use case: Realistic design system documentation screenshot.
+
+Constraints:
+- No watermark. No real design system brands (no Shadcn, Radix, 
+  Material UI, Ant Design visible names).
+- All code snippets must be syntactically valid React/TSX.
+- Components should look pixel-perfect and consistent with each other.
+- Generous spacing on 8px grid.
+- Text must be 100% readable at 2x retina.
+
+=======================================================================
+
+## 变体 B: 色板 + Typography 展示
+
+Create a design system foundation page showing color palette and typography.
+
+Layout: Left 60% for colors, right 40% for typography.
+
+Color palette section:
+- Title "Color system" (32px bold)
+- Subtitle: "Foundational colors for {{BRAND_NAME}}" 
+
+- Primary palette (5 swatches in row):
+  Each swatch: 120x120px square with rounded corners (12px), 
+  below the swatch: color name + HEX value in small caps
+  - Primary 50: #EFF6FF
+  - Primary 100: #DBEAFE
+  - Primary 500: #3B82F6 (labeled "Base")
+  - Primary 700: #1D4ED8
+  - Primary 900: #1E3A8A
+
+- Semantic colors row:
+  Success #10B981 / Warning #F59E0B / Danger #EF4444 / Info #3B82F6
+
+- Gray scale row (9 swatches from light to dark):
+  #F9FAFB #F3F4F6 #E5E7EB #D1D5DB #9CA3AF #6B7280 #4B5563 #374151 #111827
+
+Typography section (right column):
+- Title "Type scale" (32px bold)
+
+- Type specimens stacked vertically:
+  "Display / 72px / Semibold" — showing "{{FONT_FAMILY}}"
+  "H1 / 48px / Semibold" — showing "The quick brown fox"
+  "H2 / 36px / Semibold" — showing "The quick brown fox"
+  "H3 / 24px / Medium" — showing "The quick brown fox"
+  "Body L / 18px / Regular" — showing "The quick brown fox jumps over..."
+  "Body M / 16px / Regular" — showing "The quick brown fox jumps over..."
+  "Small / 14px / Regular" — showing "The quick brown fox..."
+  "Caption / 12px / Medium uppercase" — showing "CAPTION"
+
+Font family: {{FONT: Inter / GT America / SF Pro / Söhne}}
+
+Use case: Realistic design system foundations page screenshot.
+
+Constraints:
+- All color swatches must show EXACT HEX codes as labeled.
+- Typography specimens must actually render at the stated sizes.
+- Clean editorial layout with generous whitespace.
+- No watermark, no real brand names.
+- Perfect alignment on consistent grid.

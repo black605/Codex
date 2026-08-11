@@ -1,0 +1,4 @@
+interface:
+  display_name: "学术论文定稿"
+  short_description: "基于真实项目与论文初稿生成可提交的本科论文定稿及返工报告"
+  default_prompt: "请使用 $academic-paper-composer 在我当前 working draft 上继续改稿，保留指定图表并按学校格式完成定稿与改稿说明。"

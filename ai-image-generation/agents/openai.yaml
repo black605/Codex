@@ -1,0 +1,3 @@
+interface:
+  short_description: "用于执行“ai image generation”相关任务，并提供结构化流程与专业产出支持"
+  display_name: "ai image generation"
