@@ -5,9 +5,18 @@
   },
   "name": "codex",
   "owner": {
-    "name": "black605"
+    "name": "Black605"
   },
   "plugins": [
+    {
+      "description": "将 Figma 节点、Figma 链接、UI 截图或设计稿逆向为可审核、可追踪的 A2UI Observation、Canonical A2UI IR、Sheet A 组件矩阵、Sheet B 五段式 Token、三级 Slot、Guardrail、JSON Schema、Registry Candidate 和受控 Render Spec。用于通过官方 Figma MCP 读取设计证据，执行 Token 归一化、契约等价编译、暂存注册、受控渲染和视觉 QA；在移动智能玩伴项目中必须继承 mobile-assistant-orchestrator 的 Schema、Manifest、Registry 和 Gate。",
+      "name": "a2ui-reverse-engineer",
+      "skills": [
+        "./"
+      ],
+      "source": "./a2ui-reverse-engineer",
+      "strict": false
+    },
     {
       "description": "中文说明：基于真实项目与论文初稿生成可提交的本科论文定稿及返工报告。 原始触发说明：Use when the user needs to turn a real software engineering / computer science project and an existing thesis draft into a submission-ready undergraduate thesis manuscript. Trigger for requests such as \"根据项目把论文改成定稿\", \"按学校模板排版成最终版\", \"复制初稿后生成定稿 Word\", \"为定稿降查重\", \"根据PaperPass报告降AIGC\", \"继续在手改初稿上改\", \"恢复原来的图表和数据库说明\", or when academic-paper-strategist has already produced an evidence-backed rewrite plan. Outputs a cleaned manuscript, final DOCX workflow, and a separate rework report.",
       "name": "academic-paper-composer",
@@ -72,6 +81,24 @@
       "strict": false
     },
     {
+      "description": "[OMX] Run an anti-slop cleanup/refactor/deslop workflow",
+      "name": "ai-slop-cleaner",
+      "skills": [
+        "./"
+      ],
+      "source": "./ai-slop-cleaner",
+      "strict": false
+    },
+    {
+      "description": "[OMX] Run read-only deep repository analysis and return a ranked synthesis with explicit confidence, concrete file references, and clear evidence-vs-inference boundaries. Use when a user says 'analyze', 'investigate', 'why does', 'what's causing', or needs grounded cross-file explanation before any changes are proposed.",
+      "name": "analyze",
+      "skills": [
+        "./"
+      ],
+      "source": "./analyze",
+      "strict": false
+    },
+    {
       "description": "中文说明：为HyperFrames编写可控、可定位且可稳定渲染的Anime.js动画。 原始触发说明：Anime.js adapter patterns for HyperFrames. Use when writing Anime.js animations or timelines inside HyperFrames compositions, registering animations on window.__hfAnime, making Anime.js seek-driven and deterministic, or translating Anime.js examples into render-safe HyperFrames HTML.",
       "name": "animejs",
       "skills": [
@@ -90,12 +117,48 @@
       "strict": false
     },
     {
+      "description": "[OMX] Stateful validator-gated research loop with native-hook persistence",
+      "name": "autoresearch",
+      "skills": [
+        "./"
+      ],
+      "source": "./autoresearch",
+      "strict": false
+    },
+    {
+      "description": "[OMX] Durable professor-critic research workflow over Codex goal mode without reviving deprecated omx autoresearch",
+      "name": "autoresearch-goal",
+      "skills": [
+        "./"
+      ],
+      "source": "./autoresearch-goal",
+      "strict": false
+    },
+    {
       "description": "中文说明：生成黑白线框图、可交互HTML原型、高保真界面和设计系统。 原始触发说明：Create polished design artifacts as self-contained HTML: UI mockups, interactive prototypes, wireframes, landing pages, dashboards, app screens, mobile apps, slide decks (a.k.a. PPT / PowerPoint presentations), and visual explorations. Use whenever the user asks to design, mock up, prototype, wireframe, visualize, explore, or make a PPT/deck for an interface, product screen, user flow, content layout, visual artifact, or pitch/deck concept, even if they do not say \"design\". Also use to export a deck built with this skill to PowerPoint (PPT/PPTX) — but only decks authored here (deck-stage / this skill's slide-structured HTML), NOT arbitrary HTML, so confirm the target is such a deck first. Also use for setting up, importing, or authoring reusable design systems, UI kits, brand tokens, or component libraries. Harness-agnostic for Claude Code, Cursor, Codex Agent, and similar file-capable agents.",
       "name": "baoyu-design",
       "skills": [
         "./"
       ],
       "source": "./baoyu-design",
+      "strict": false
+    },
+    {
+      "description": "[OMX] Bounded best-practice research wrapper using official/upstream evidence first",
+      "name": "best-practice-research",
+      "skills": [
+        "./"
+      ],
+      "source": "./best-practice-research",
+      "strict": false
+    },
+    {
+      "description": "[OMX] Cancel any active OMX mode (autopilot, ralph, ultrawork, ecomode, ultraqa, swarm, ultrapilot, pipeline, team)",
+      "name": "cancel",
+      "skills": [
+        "./"
+      ],
+      "source": "./cancel",
       "strict": false
     },
     {
@@ -204,6 +267,15 @@
         "./"
       ],
       "source": "./hatch-pet",
+      "strict": false
+    },
+    {
+      "description": "中文说明：润色职场英语表达并提供发音、重音、连读和实用口语训练。 原始触发说明：Automatically coach any English word, phrase, sentence, or passage the user sends, especially for practical workplace use. Explain meaning and usage, correct and polish English, prepare emails, chat messages, meetings, presentations, status updates, interviews, and role-play, and teach pronunciation with IPA, stress, rhythm, linking, reductions, and speaking chunks. Trigger whenever the user's message is primarily English, even if they do not explicitly request teaching or invoke the skill. Also use for 工作英语, 职场英语, 英语表达, 翻译工作消息, 邮件润色, 会议口语, 汇报表达, 发音, 连读, 跟读, or workplace conversation practice.",
+      "name": "workplace-english-coach",
+      "skills": [
+        "./"
+      ],
+      "source": "./workplace-english-coach",
       "strict": false
     }
   ]

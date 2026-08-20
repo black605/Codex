@@ -1,0 +1,11 @@
+interface:
+  display_name: "A2UI 逆向工程 Skill"
+  short_description: "将 Figma 或设计截图编译为受控 A2UI Schema 与页面"
+  default_prompt: "使用 $a2ui-reverse-engineer 读取这个 Figma 链接或设计截图，生成可审核的 Sheet A、Sheet B、JSON Schema 和受控 Render Spec。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "figma"
+      description: "读取 Figma Design Context、Variables、Code Connect、截图和素材"
+      transport: "streamable_http"
+      url: "https://mcp.figma.com/mcp"

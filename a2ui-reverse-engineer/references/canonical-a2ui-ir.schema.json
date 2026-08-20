@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://a2ui.local/schemas/canonical-a2ui-ir.schema.json",
+  "title": "Canonical A2UI IR",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "runId", "projectId", "sourceHash", "components", "gateResults"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "runId": {"type": "string", "minLength": 1},
+    "projectId": {"type": "string", "minLength": 1},
+    "sourceHash": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"},
+    "components": {"type": "array", "items": {"$ref": "#/$defs/component"}},
+    "gateResults": {"type": "array", "items": {"$ref": "#/$defs/gate"}}
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "required": ["sourceObservationIds", "confidence", "status"],
+      "properties": {
+        "sourceObservationIds": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "status": {"enum": ["candidate", "needs-review", "approved", "rejected"]}
+      }
+    },
+    "slot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slotId", "level", "min", "max", "accepts", "emptyPolicy", "children"],
+      "properties": {
+        "slotId": {"type": "string", "pattern": "^slot-[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "level": {"type": "integer", "minimum": 1, "maximum": 3},
+        "min": {"type": "integer", "minimum": 0},
+        "max": {"type": "integer", "minimum": 1},
+        "accepts": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "emptyPolicy": {"enum": ["collapse", "preserve", "fallback"]},
+        "children": {"type": "array", "items": {"$ref": "#/$defs/slot"}}
+      }
+    },
+    "token": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["tokenName", "category", "rawValue", "sourceObservationIds", "confidence", "status"],
+      "properties": {
+        "tokenName": {"type": "string", "pattern": "^component\\.a2-[a-z0-9-]+\\.[a-z0-9-]+\\.[a-z0-9-]+\\.[a-z0-9-]+$"},
+        "category": {"enum": ["color", "spacing", "radius", "typography", "border", "shadow", "motion", "size", "layout"]},
+        "rawValue": {},
+        "compiledValue": {},
+        "semanticRef": {"type": ["string", "null"]},
+        "snapPolicy": {"enum": ["none", "spacing-4px", "radius-4px", "project-contract"]},
+        "cssVariable": {"type": "string"},
+        "sourceObservationIds": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "status": {"enum": ["candidate", "needs-review", "approved", "rejected"]}
+      }
+    },
+    "component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["componentId", "baseClass", "version", "variant", "source", "slots", "props", "tokens", "guardrails", "actions", "implementation", "status"],
+      "properties": {
+        "componentId": {"type": "string", "pattern": "^a2-[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "baseClass": {"type": "string", "pattern": "^a2-[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "variant": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "source": {"$ref": "#/$defs/evidence"},
+        "slots": {"type": "array", "items": {"$ref": "#/$defs/slot"}},
+        "props": {"type": "object"},
+        "tokens": {"type": "array", "items": {"$ref": "#/$defs/token"}},
+        "guardrails": {"type": "object"},
+        "actions": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "implementation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["react"],
+          "properties": {"react": {"type": "string", "pattern": "^registry://"}}
+        },
+        "status": {"enum": ["candidate", "reviewed", "compiled", "runtime-validated", "visual-validated", "active", "rejected", "deprecated", "superseded"]}
+      }
+    },
+    "gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gateId", "status", "issues"],
+      "properties": {
+        "gateId": {"type": "string", "minLength": 1},
+        "status": {"enum": ["passed", "needs-review", "blocked", "failed", "skipped"]},
+        "issues": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}
